@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terastudio - Gaming Community</title>
+    <meta name="description" content="Terastudio - Gaming Community untuk berbagi meme, chatting, dan mendapatkan teman baru">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #E4E4E7;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+        }
+        
+        .hero-content {
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .hero-title {
+            font-family: 'Caveat', cursive;
+            font-size: clamp(3rem, 8vw, 6rem);
+            color: #007BFF;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #007BFF, #3395FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            margin: 8px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 16px;
+            font-weight: 600;
+            transition: all 0.25s ease-out;
+        }
+        
+        .btn:hover {
+            background-color: #3395FF;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid #272727;
+            color: #E4E4E7;
+        }
+        
+        .games-section {
+            padding: 96px 0;
+            background-color: #141414;
+        }
+        
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            margin-top: 64px;
+        }
+        
+        .game-card {
+            background-color: #141414;
+            border: 1px solid #272727;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 24px rgba(0, 123, 255, 0.25);
+        }
+        
+        .meme-section {
+            padding: 96px 0;
+            background-color: #0a0a0a;
+        }
+        
+        .meme-generator {
+            background-color: #141414;
+            border: 1px solid #272727;
+            border-radius: 12px;
+            padding: 32px;
+            margin-top: 32px;
+        }
+        
+        .footer {
+            background-color: #141414;
+            padding: 96px 0 32px;
+            text-align: center;
+            border-top: 1px solid #272727;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .games-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .container {
+                padding: 0 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">terastudio👋</h1>
+                <p class="hero-subtitle">
+                    Tempat berbagi meme, chatting, dan dapatkan banyak teman baru anda aqui!
+                </p>
+                <p style="margin-bottom: 24px; color: #A1A1AA;">
+                    Boleh curhat, berbagi pengalaman, karya, dan yang lainnya aqui!<br>
+                    Grup fans dari Lahelu dan Sendok Kecil :)
+                </p>
+                <a href="https://chat.whatsapp.com/DSDH1s8NRrIFDD1WwbmqUJ" target="_blank" class="btn">
+                    Join WhatsApp Group
+                </a>
+                <a href="https://youtube.com/@terastudioo" target="_blank" class="btn btn-secondary">
+                    Subscribe YouTube
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="games-section">
+        <div class="container">
+            <h2 style="font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; margin-bottom: 16px;">
+                🎮 Mari Login!
+            </h2>
+            <p style="text-align: center; font-size: 1.1rem; color: #A1A1AA; max-width: 600px; margin: 0 auto;">
+                Game-game populer yang dimainkan komunitas terastudio
+            </p>
+            
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3 style="margin-bottom: 8px;">📱 Mobile Legends</h3>
+                    <p style="color: #A1A1AA; font-size: 0.9rem;">Game MOBA mobile terpopuler</p>
+                </div>
+                <div class="game-card">
+                    <h3 style="margin-bottom: 8px;">🔺 Geometry Dash</h3>
+                    <p style="color: #A1A1AA; font-size: 0.9rem;">Rhythm-based platformer</p>
+                </div>
+                <div class="game-card">
+                    <h3 style="margin-bottom: 8px;">🎮 Roblox</h3>
+                    <p style="color: #A1A1AA; font-size: 0.9rem;">Platform gaming world</p>
+                </div>
+                <div class="game-card">
+                    <h3 style="margin-bottom: 8px;">⛏️ Minecraft</h3>
+                    <p style="color: #A1A1AA; font-size: 0.9rem;">Sandbox & survival game</p>
+                </div>
+                <div class="game-card">
+                    <h3 style="margin-bottom: 8px;">🏰 Clash of Clans</h3>
+                    <p style="color: #A1A1AA; font-size: 0.9rem;">Strategy mobile game</p>
+                </div>
+                <div class="game-card">
+                    <h3 style="margin-bottom: 8px;">🔫 Call of Duty Mobile</h3>
+                    <p style="color: #A1A1AA; font-size: 0.9rem;">First-person shooter mobile</p>
+                </div>
+                <div class="game-card">
+                    <h3 style="margin-bottom: 8px;">🛡️ Team Fortress 2</h3>
+                    <p style="color: #A1A1AA; font-size: 0.9rem;">Team-based FPS</p>
+                </div>
+                <div class="game-card">
+                    <h3 style="margin-bottom: 8px;">🎯 Valorant</h3>
+                    <p style="color: #A1A1AA; font-size: 0.9rem;">Tactical FPS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="meme-section">
+        <div class="container">
+            <h2 style="font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; margin-bottom: 16px;">
+                🔥 Meme Generator
+            </h2>
+            <p style="text-align: center; font-size: 1.1rem; color: #A1A1AA; max-width: 600px; margin: 0 auto;">
+                Buat meme lucu seperti di imgflip.com! Upload gambar dan tambahkan teks
+            </p>
+            
+            <div class="meme-generator">
+                <div style="text-align: center; padding: 64px;">
+                    <p style="font-size: 3rem; margin-bottom: 16px;">🖼️</p>
+                    <h3>Upload gambar atau pilih template untuk mulai membuat meme</h3>
+                    <p style="color: #A1A1AA; margin-top: 16px;">
+                        Meme generator lengkap tersedia di versi React
+                    </p>
+                    <a href="https://imgflip.com/memegenerator" target="_blank" class="btn" style="margin-top: 24px;">
+                        Coba Imgflip Generator
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 96px 0; background-color: #141414;">
+        <div class="container">
+            <h2 style="font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; margin-bottom: 32px;">
+                📱 Join Grupos WhatsApp
+            </h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3 style="margin-bottom: 8px;">🍴 terastudio spoonity</h3>
+                    <p style="color: #A1A1AA; margin-bottom: 16px;">Grupo utama untuk diskusi umum</p>
+                    <a href="https://chat.whatsapp.com/DSDH1s8NRrIFDD1WwbmqUJ" target="_blank" class="btn">Join Grup</a>
+                </div>
+                <div class="game-card">
+                    <h3 style="margin-bottom: 8px;">💭 keluhkesah terastudio</h3>
+                    <p style="color: #A1A1AA; margin-bottom: 16px;">Tempat curhat dan sharing</p>
+                    <a href="https://chat.whatsapp.com/HSvMVWjvgfEAKslPGoSBKz" target="_blank" class="btn">Join Grup</a>
+                </div>
+                <div class="game-card">
+                    <h3 style="margin-bottom: 8px;">📺 terastudio YouTube</h3>
+                    <p style="color: #A1A1AA; margin-bottom: 16px;">Subscribe channel YouTube kami</p>
+                    <a href="https://youtube.com/@terastudioo" target="_blank" class="btn btn-secondary">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 96px 0; background-color: #0a0a0a;">
+        <div class="container">
+            <h2 style="font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; margin-bottom: 32px;">
+                📝 Kritik, Saran & Pengaduan
+            </h2>
+            <p style="text-align: center; font-size: 1.1rem; color: #A1A1AA; max-width: 600px; margin: 0 auto 32px;">
+                Kami sangat menghargai feedback dari komunitas. Silakan berikan kritik, saran, atau laporkan masalah.
+            </p>
+            <div style="text-align: center;">
+                <a href="https://forms.gle/ng6ZphQwZBrjdZdWA" target="_blank" class="btn">📤 Kirim Feedback</a>
+                <p style="color: #007BFF; margin-top: 16px; font-weight: 500;">
+                    📋 DISCLAIMER: DATA PRIBADI ANDA AKAN TERJAGA AMAN!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h3 style="font-family: 'Caveat', cursive; font-size: 2.5rem; color: #007BFF; margin-bottom: 16px;">
+                terastudio
+            </h3>
+            <p style="color: #A1A1AA; margin-bottom: 32px; max-width: 400px; margin-left: auto; margin-right: auto;">
+                Komunitas gaming dan meme yang ramah untuk semua. Bergabunglah dengan ribuan anggota!
+            </p>
+            <div style="background: rgba(0, 123, 255, 0.1); border: 1px solid rgba(0, 123, 255, 0.2); padding: 16px; border-radius: 12px; margin-bottom: 32px;">
+                <em style="color: #007BFF;">~terastudio, i like it~</em>
+            </div>
+            <p style="color: #A1A1AA; font-size: 0.9rem;">
+                © 2024 terastudio. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

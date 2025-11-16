@@ -1,0 +1,13 @@
+{
+  "name": "terastudio-website",
+  "version": "1.0.0",
+  "description": "Professional gaming community website for terastudio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "serve": "npx serve ."
+  },
+  "keywords": ["gaming", "community", "terastudio", "react", "website"],
+  "author": "MiniMax Agent",
+  "license": "MIT"
+}

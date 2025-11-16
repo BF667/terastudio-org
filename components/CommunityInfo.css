@@ -1,0 +1,226 @@
+.community-info {
+  background-color: var(--bg-page);
+}
+
+.community-features,
+.community-rules,
+.community-groups {
+  margin-bottom: var(--space-xxl);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.section-description {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+}
+
+.features-grid {
+  margin-top: var(--space-xl);
+}
+
+.feature-card {
+  text-align: center;
+  padding: var(--space-lg);
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-slow);
+  border: 1px solid var(--border-default);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+  border-color: var(--primary-500);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-sm);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.feature-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.rules-grid {
+  margin-top: var(--space-xl);
+}
+
+.rule-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-default);
+  transition: all var(--transition-normal);
+}
+
+.rule-card:hover {
+  border-color: var(--feedback-error);
+  background-color: rgba(220, 53, 69, 0.05);
+}
+
+.rule-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: var(--space-xs);
+}
+
+.rule-title {
+  font-size: 1.1rem;
+  color: var(--feedback-error);
+  margin-bottom: var(--space-xs);
+  font-weight: 600;
+}
+
+.rule-description {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.nsfw-notice {
+  margin-top: var(--space-xl);
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
+  border: 2px solid var(--feedback-warning);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.nsfw-notice::before {
+  content: '⚠️';
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  font-size: 2rem;
+  opacity: 0.3;
+}
+
+.nsfw-notice h3 {
+  color: var(--feedback-warning);
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+}
+
+.nsfw-notice p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+.nsfw-notice p:last-child {
+  margin-bottom: 0;
+}
+
+.groups-grid {
+  margin-top: var(--space-xl);
+}
+
+.group-card {
+  text-align: center;
+  padding: var(--space-lg);
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-slow);
+  border: 1px solid var(--border-default);
+}
+
+.group-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+  border-color: var(--primary-500);
+}
+
+.group-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+.group-title {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-sm);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.group-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+.group-btn {
+  font-size: 0.9rem;
+  height: 44px;
+  padding: 0 var(--space-md);
+  min-width: 120px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .rules-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .groups-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .rule-card {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+  
+  .nsfw-notice {
+    margin-top: var(--space-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-card,
+  .group-card {
+    padding: var(--space-md);
+  }
+  
+  .feature-icon,
+  .group-icon {
+    font-size: 2.5rem;
+  }
+  
+  .rule-card {
+    padding: var(--space-md);
+  }
+}

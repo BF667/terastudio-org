@@ -1,0 +1,221 @@
+.meme-generator {
+  background-color: var(--bg-surface);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-xxl);
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.section-description {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.meme-workspace {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.meme-controls {
+  position: sticky;
+  top: 90px;
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.control-section {
+  margin-bottom: var(--space-md);
+}
+
+.control-section h3 {
+  font-size: 1rem;
+  margin-bottom: var(--space-sm);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xs);
+}
+
+.template-btn {
+  padding: var(--space-sm);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.template-btn:hover {
+  background-color: var(--primary-500);
+  color: white;
+  border-color: var(--primary-500);
+}
+
+.control-actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-default);
+}
+
+.control-actions .btn {
+  flex: 1;
+  min-width: 120px;
+  font-size: 0.9rem;
+  height: 44px;
+}
+
+.meme-preview {
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.meme-canvas {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  background-color: var(--bg-surface);
+  border: 2px dashed var(--border-default);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.meme-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.meme-text-overlay {
+  position: absolute;
+  font-family: Impact, 'Arial Black', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  text-shadow: 
+    2px 2px 0px black,
+    -2px -2px 0px black,
+    2px -2px 0px black,
+    -2px 2px 0px black,
+    0px 2px 0px black,
+    2px 0px 0px black,
+    0px -2px 0px black,
+    -2px 0px 0px black;
+  font-size: 2rem;
+  line-height: 1.1;
+  cursor: move;
+  user-select: none;
+  padding: 10px;
+  max-width: calc(100% - 20px);
+  word-wrap: break-word;
+  z-index: 10;
+  transition: all var(--transition-fast);
+}
+
+.meme-text-overlay.top {
+  top: 20px;
+}
+
+.meme-text-overlay.bottom {
+  bottom: 20px;
+}
+
+.meme-text-overlay:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+.meme-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-surface);
+  border: 2px dashed var(--border-default);
+}
+
+.placeholder-content {
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.placeholder-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.placeholder-content p {
+  font-size: 1rem;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .meme-workspace {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  
+  .meme-controls {
+    position: static;
+    max-height: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .template-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .control-actions {
+    flex-direction: column;
+  }
+  
+  .meme-canvas {
+    min-height: 300px;
+  }
+  
+  .meme-text-overlay {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .meme-canvas {
+    min-height: 250px;
+  }
+  
+  .meme-text-overlay {
+    font-size: 1.2rem;
+  }
+}

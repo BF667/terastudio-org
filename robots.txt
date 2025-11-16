@@ -1,0 +1,10 @@
+# Robot file untuk Terastudio
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /api/
+
+# Allow all search engines to index the site
+# Website ini adalah komunitas gaming publik
