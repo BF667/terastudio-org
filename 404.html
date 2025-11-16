@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Tidak Ditemukan - Terastudio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #E4E4E7;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .error-container {
+            max-width: 600px;
+            padding: 32px;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-family: 'Caveat', cursive;
+            color: #007BFF;
+            margin-bottom: 24px;
+            text-shadow: 0 0 30px rgba(0, 123, 255, 0.5);
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            color: #007BFF;
+        }
+        
+        .error-message {
+            font-size: 1.1rem;
+            color: #A1A1AA;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+        
+        .home-btn {
+            display: inline-block;
+            padding: 12px 32px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 16px;
+            font-weight: 600;
+            transition: all 0.25s ease-out;
+        }
+        
+        .home-btn:hover {
+            background-color: #3395FF;
+            transform: translateY(-2px);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Oops! Halaman tidak ditemukan</h1>
+        <p class="error-message">
+            Maaf, halaman yang Anda cari tidak ditemukan.<br>
+            Mungkin halaman tersebut dipindahkan atau dihapus.
+        </p>
+        <a href="/" class="home-btn">Kembali ke Beranda</a>
+    </div>
+</body>
+</html>
